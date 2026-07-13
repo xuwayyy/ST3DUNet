@@ -1,0 +1,81 @@
+image_size: &image_size 128
+seq_len: &seq_len 8
+
+model:
+  name: ST3DUnet
+  num_classes: 2
+  ignore_index: 2
+  num_channels: 3
+  class_names: ["not building", "building"]
+
+dataset:
+  name: Muds
+  path: "./datasets/Muds"
+  split_file: ./datasets/Muds/split.json
+  global_batch_size: 2
+  image_size: *image_size
+  true_size: 1024
+  num_classes: 2
+  ignore_index: 2
+  num_channels: 3
+  class_names: ["not building", "building"]
+  seq_len: *seq_len
+  data_aug_range: 2
+  sampling_mode: "average"
+
+
+
+computer:
+  num_workers: 4
+  accelerator: "cuda"
+
+trainer:
+  max_epochs: 100
+  ckpt_interval: 10
+  warmup_epochs: 5
+  warmup: False
+
+logger:
+  dir: ./logs
+
+checkpoints:
+  dir: ./checkpoints
+
+visualize:
+  dir: ./outputs
+
+
+
+
+ST3DUNET:
+  INPUT_CHANNELS: 3
+  OUTPUT_CHANNELS: 2
+  ENCODER_WIDTHS: [ 32, 32, 32, 64 ]
+  DECODER_WIDTHS: [ 16, 16, 32, 64 ]
+  MLP: [128, 64]
+  STR_CONV_K: 4
+  STR_CONV_S: 2
+  STR_CONV_P: 1
+  N_HEAD: 16
+  D_MODEL: 128
+  D_K: 4
+  PAD_VALUE: 0
+  SPATIAL_ATTENTION:
+    IMAGE_SIZE: *image_size
+    EMB_DIM: 128
+    N_HEAD: 4
+    DEPTH: 2
+    PATCH_SIZE: 4
+    DROPOUT: 0.1
+  CROSS_ATTENTION:
+    N_HEAD: 4
+    DROPOUT: 0.1
+
+loss:
+  ignore_index: 2
+  mix: {
+      "ce": 1.0
+  }
+run:
+  seed: 42
+
