@@ -42,6 +42,9 @@ Download the datasets from the following links:
 - **MUDS**  
   https://drive.google.com/file/d/1RySuzHgQDSgHSw2cbriceY5gMqTsCs8I/view?usp=drive_link
 
+-**DynamicEarthNetMSI**
+  https://dataserv.ub.tum.de/index.php/s/m1650201
+
 After downloading, extract the datasets into the `datasets/` directory.
 
 ---
