@@ -89,7 +89,7 @@ To evaluate a specific checkpoint, modify the checkpoint path in **`main.py` (ar
 
 ---
 
-# 🙏 Acknowledgements
+#  Acknowledgements
 
 This project benefits from the pre-processed **DynamicEarthNet** and **MUDS** datasets provided by the authors of [SitsSCD](https://github.com/ElliotVincent/SitsSCD). We gratefully acknowledge their effort in preparing and releasing these resources.
 
