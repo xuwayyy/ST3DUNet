@@ -32,7 +32,7 @@ numpy==1.26.4
 
 # 📦 Dataset Preparation
 
-We use the pre-processed versions of the **DynamicEarthNet** and **MUDS** datasets provided by the [SitsSCD](https://github.com/ElliotVincent/SitsSCD) project. The pre-processing includes image compression to improve memory efficiency during long-term time-series training.
+We use the pre-processed versions of **DynamicEarthNet**, **DynamicEarthNet-MSI**, and **MUDS** datasets. The DynamicEarthNet and MUDS datasets are provided by the SitsSCD project, while the DynamicEarthNet-MSI dataset is available from the original authors.
 
 Download the datasets from the following links:
 
@@ -42,7 +42,7 @@ Download the datasets from the following links:
 - **MUDS**  
   https://drive.google.com/file/d/1RySuzHgQDSgHSw2cbriceY5gMqTsCs8I/view?usp=drive_link
 
-- **DynamicEarthNetMSI**
+- **DynamicEarthNet-MSI**  
   https://dataserv.ub.tum.de/index.php/s/m1650201
 
 After downloading, extract the datasets into the `datasets/` directory.
