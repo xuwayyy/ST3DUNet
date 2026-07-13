@@ -22,7 +22,6 @@ First, install **PyTorch 2.3.0** with **CUDA 12.1** following the official PyTor
 Then install the remaining dependencies:
 
 ```text
-pytorch==2.3.0
 rasterio==1.4.3
 opencv-python==4.12.0
 numpy==1.26.4
