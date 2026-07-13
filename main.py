@@ -95,7 +95,8 @@ def main():
 
         trainer = load_trainer(cfg, model, trainloader,
                                testloader_in=testloader_in, testloader_out=testloader_out,
-                               save_ckpt_path=save_ckpt_path, save_log_path=save_log_path)
+                               save_ckpt_path=save_ckpt_path, save_log_path=save_log_path,
+                               warmup=cfg['trainer']['warmup'])
 
         trainer.train_epochs(epochs=cfg['trainer']['max_epochs'])
         print("======>>> [TRAIN MODE] Finished Successfully <<<======")
