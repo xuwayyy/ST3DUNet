@@ -1,4 +1,4 @@
-# 🛰️ Spatial-Temporal Collaborative Network for Satellite Image Time Series Semantic Change Detection
+#  Spatial-Temporal Collaborative Network for Satellite Image Time Series Semantic Change Detection
 
 Official implementation of the paper **"Spatial-Temporal Collaborative Network for Satellite Image Time Series Semantic Change Detection"**, published in **IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2026**.
 
@@ -80,10 +80,13 @@ To evaluate a trained model, simply add the `--test` flag:
 python main.py --data muds --test
 ```
 
-By default, the latest checkpoint under the experiment directory specified in the corresponding YAML configuration file will be loaded automatically.
+By default, the latest experiment folder corresponding to the model name in YAML will be located automatically, and the checkpoint inside will be loaded for evaluation.
 
 To evaluate a specific checkpoint, modify the checkpoint path in **`main.py` (around Line 106)** and run the same command above.
 
-> **Note**
->
-> Both **In-Domain** and **Out-of-Domain** evaluation metrics are computed and reported automatically.
+---
+
+# 🙏 Acknowledgements
+
+This project benefits from the pre-processed **DynamicEarthNet** and **MUDS** datasets provided by the authors of [SitsSCD](https://github.com/ElliotVincent/SitsSCD). We gratefully acknowledge their effort in preparing and releasing these resources.
+
