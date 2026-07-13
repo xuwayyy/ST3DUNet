@@ -42,7 +42,7 @@ def main():
     dataset_name = args.data
     cfg = load_yaml(f"configs/{dataset_name}.yaml")
 
-    timestamp = datetime.now().strftime("%m_%d_%H_%M_%S")  # 月-日_时_分_秒
+    timestamp = datetime.now().strftime("%m_%d_%H_%M_%S")
     save_ckpt_path = os.path.join(cfg['checkpoints']['dir'], cfg['dataset']['name'] , "_" + timestamp + cfg['model']['name'])
     save_log_path = os.path.join(cfg['logger']['dir'], cfg['dataset']['name'] , "_" + timestamp  + cfg['model']['name'])
     save_visual_path = os.path.join(cfg['visualize']['dir'], cfg['dataset']['name'] , "_" + timestamp  + cfg['model']['name'])
