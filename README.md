@@ -43,8 +43,8 @@ Download the datasets from the following links:
   [Google Drive](https://drive.google.com/file/d/1RySuzHgQDSgHSw2cbriceY5gMqTsCs8I/view?usp=drive_link)
 
 - **DynamicEarthNet-MSI**  
-  [Official Download](https://dataserv.ub.tum.de/index.php/s/m1650201)  
   [Baidu Netdisk](https://pan.baidu.com/s/1xwXeTM5f0kf49DDdqBKTWw) (Extraction Code: `ep5y`)
+  Only the .npy file in each folder is required, ignore tiff images and .pt files.
 
 After downloading, extract the datasets into the `datasets/` directory.
 
