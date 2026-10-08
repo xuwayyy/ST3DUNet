@@ -27,6 +27,7 @@ opencv-python==4.12.0
 numpy==1.26.4
 ```
 
+
 ---
 
 # 📦 Dataset Preparation
@@ -36,17 +37,19 @@ We use the pre-processed versions of **DynamicEarthNet**, **DynamicEarthNet-MSI*
 Download the datasets from the following links:
 
 - **DynamicEarthNet**  
-  https://drive.google.com/file/d/1cMP57SPQWYKMy8X60iK217C28RFBkd2z/view?usp=drive_link
+  [Google Drive](https://drive.google.com/file/d/1cMP57SPQWYKMy8X60iK217C28RFBkd2z/view?usp=drive_link)
 
 - **MUDS**  
-  https://drive.google.com/file/d/1RySuzHgQDSgHSw2cbriceY5gMqTsCs8I/view?usp=drive_link
+  [Google Drive](https://drive.google.com/file/d/1RySuzHgQDSgHSw2cbriceY5gMqTsCs8I/view?usp=drive_link)
 
 - **DynamicEarthNet-MSI**  
-  https://dataserv.ub.tum.de/index.php/s/m1650201
+  [Official Download](https://dataserv.ub.tum.de/index.php/s/m1650201)  
+  [Baidu Netdisk](https://pan.baidu.com/s/1xwXeTM5f0kf49DDdqBKTWw) (Extraction Code: `ep5y`)
 
 After downloading, extract the datasets into the `datasets/` directory.
 
 ---
+
 
 # 🚀 Training
 
