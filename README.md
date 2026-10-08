@@ -44,6 +44,7 @@ Download the datasets from the following links:
 
 - **DynamicEarthNet-MSI**  
   [Baidu Netdisk](https://pan.baidu.com/s/1xwXeTM5f0kf49DDdqBKTWw) (Extraction Code: `ep5y`)
+  
   Only the .npy file in each folder is required, ignore tiff images and .pt files.
 
 After downloading, extract the datasets into the `datasets/` directory.
